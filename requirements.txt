@@ -1,50 +1,102 @@
 # YOLOv5 requirements
 # Usage: pip install -r requirements.txt
 
-# Base ------------------------------------------------------------------------
-gitpython>=3.1.30
-matplotlib>=3.3
-numpy>=1.23.5
-opencv-python>=4.1.1
-pillow>=10.3.0
-psutil  # system resources
-PyYAML>=5.3.1
-requests>=2.32.0
-scipy>=1.4.1
-thop>=0.1.1  # FLOPs computation
-torch>=1.8.0  # see https://pytorch.org/get-started/locally (recommended)
-torchvision>=0.9.0
-tqdm>=4.64.0
-ultralytics>=8.0.232
-# protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
+# Generated Requirements (using all the original tests in ci-testing)
+astunparse==1.6.3
+certifi==2024.2.2
+charset_normalizer==3.3.2
+coloredlogs==15.0.1
+cycler==0.12.1
+defusedxml==0.7.1
+flatbuffers==24.3.25
+fsspec==2024.3.1
+gast==0.5.4
+gitdb==4.0.11
+h5py==3.11.0
+idna==3.7
+importlib_metadata==4.6.4
+keras==2.15.0
+keyring==23.5.0
+kiwisolver==1.4.5
+matplotlib==3.8.3
+ml_dtypes==0.2.0
+more_itertools==8.10.0
+mpmath==1.3.0
+networkx==3.1
+numpy==1.26.4
+onnx==1.16.1
+opt_einsum==3.3.0
+packaging==24.0
+pandas==2.2.2
+pip==22.0.2
+psutil==5.9.8
+pyparsing==2.4.7
+pytz==2024.1
+requests==2.31.0
+scipy==1.13.0
+seaborn==0.13.2
+setuptools==69.5.1
+six==1.16.0
+smmap==5.0.1
+sympy==1.12
+tensorboard==2.15.2
+tensorflow_estimator==2.15.0
+termcolor==2.4.0
+thop==0.1.1-2209072238
+torch==2.3.0
+torchvision==0.18.0
+tqdm==4.66.4
+triton==2.3.0
+typing_extensions==4.11.0
+ultralytics==8.2.15
+urllib3==2.2.1
+wrapt==1.14.1
+zipp==1.0.0
 
-# Logging ---------------------------------------------------------------------
-# tensorboard>=2.4.1
-# clearml>=1.2.0
-# comet
+# # Base ------------------------------------------------------------------------
+# gitpython>=3.1.30
+# matplotlib>=3.3
+# numpy>=1.23.5
+# opencv-python>=4.1.1
+# pillow>=10.3.0
+# psutil  # system resources
+# PyYAML>=5.3.1
+# requests>=2.32.0
+# scipy>=1.4.1
+# thop>=0.1.1  # FLOPs computation
+# torch>=1.8.0  # see https://pytorch.org/get-started/locally (recommended)
+# torchvision>=0.9.0
+# tqdm>=4.64.0
+# ultralytics>=8.0.232
+# # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
-# Plotting --------------------------------------------------------------------
-pandas>=1.1.4
-seaborn>=0.11.0
+# # Logging ---------------------------------------------------------------------
+# # tensorboard>=2.4.1
+# # clearml>=1.2.0
+# # comet
 
-# Export ----------------------------------------------------------------------
-# coremltools>=6.0  # CoreML export
-# onnx>=1.10.0  # ONNX export
-# onnx-simplifier>=0.4.1  # ONNX simplifier
-# nvidia-pyindex  # TensorRT export
-# nvidia-tensorrt  # TensorRT export
-# scikit-learn<=1.1.2  # CoreML quantization
-# tensorflow>=2.4.0,<=2.13.1  # TF exports (-cpu, -aarch64, -macos)
-# tensorflowjs>=3.9.0  # TF.js export
-# openvino-dev>=2023.0  # OpenVINO export
+# # Plotting --------------------------------------------------------------------
+# pandas>=1.1.4
+# seaborn>=0.11.0
 
-# Deploy ----------------------------------------------------------------------
-setuptools>=65.5.1 # Snyk vulnerability fix
-# tritonclient[all]~=2.24.0
+# # Export ----------------------------------------------------------------------
+# # coremltools>=6.0  # CoreML export
+# # onnx>=1.10.0  # ONNX export
+# # onnx-simplifier>=0.4.1  # ONNX simplifier
+# # nvidia-pyindex  # TensorRT export
+# # nvidia-tensorrt  # TensorRT export
+# # scikit-learn<=1.1.2  # CoreML quantization
+# # tensorflow>=2.4.0,<=2.13.1  # TF exports (-cpu, -aarch64, -macos)
+# # tensorflowjs>=3.9.0  # TF.js export
+# # openvino-dev>=2023.0  # OpenVINO export
 
-# Extras ----------------------------------------------------------------------
-# ipython  # interactive notebook
-# mss  # screenshots
-# albumentations>=1.0.3
-# pycocotools>=2.0.6  # COCO mAP
-wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
+# # Deploy ----------------------------------------------------------------------
+# setuptools>=65.5.1 # Snyk vulnerability fix
+# # tritonclient[all]~=2.24.0
+
+# # Extras ----------------------------------------------------------------------
+# # ipython  # interactive notebook
+# # mss  # screenshots
+# # albumentations>=1.0.3
+# # pycocotools>=2.0.6  # COCO mAP
+# wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
